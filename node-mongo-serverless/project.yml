@@ -1,0 +1,20 @@
+parameters: {}
+packages:
+    - name: mongodb
+      shared: false
+      environment: {}
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: demo
+          binary: false
+          main: ""
+          runtime: nodejs:default
+          web: true
+          webSecure: false
+          parameters: {}
+          environment: {}
+          annotations: {}
+          limits: {}
+environment:
+  DATABASE_URL: ${DATABASE_URL}
